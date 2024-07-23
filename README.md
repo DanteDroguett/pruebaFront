@@ -1,3 +1,21 @@
+# Indicadores Service
+
+Este proyecto Angular proporciona un servicio (`IndicadoresService`) para obtener y mostrar indicadores económicos como el Dólar, UF, Euro, IPC y UTM desde una API externa. La información es recuperada, transformada y presentada a través de componentes en la aplicación.
+
+## Estructura del Proyecto
+
+1. **Servicio `IndicadoresService`**: Encargado de obtener los datos de indicadores económicos desde la API externa.
+2. **Componente `ListaDetallesComponent`**: Muestra detalles filtrados de un indicador específico basado en el parámetro de la ruta.
+3. **Componente `ListaIndicadoresComponent`**: Muestra una lista de todos los indicadores disponibles.
+
+## Instalación
+
+1. Clona este repositorio:
+   git clone https://github.com/DanteDroguett/pruebaFront.git
+
+2. Instala las dependencias:
+    npm install
+
 # IndicadorFinanciero
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
