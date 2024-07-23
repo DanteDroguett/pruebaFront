@@ -1,0 +1,22 @@
+<!-- lista-indicadores.component.html -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center mb-4">Indicadores</h2>
+      <ul class="list-group">
+        <li *ngFor="let indicator of indicators | unique:'name'"
+          class="list-group-item d-flex justify-content-between align-items-center">
+          <a [routerLink]="['/indicador', indicator.id]" class="text-decoration-none">
+            {{ indicator?.name }}
+          </a>
+          <div>
+            <a [routerLink]="['/grafico', indicator.id]" class="text-decoration-none">
+              <i class="bi bi-info-circle text-primary fw-bold"></i>
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
